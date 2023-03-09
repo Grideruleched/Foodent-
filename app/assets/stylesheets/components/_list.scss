@@ -1,0 +1,83 @@
+
+.centreuse-jean-loup {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.container-list {
+  background-color: white;
+  height: 1000px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dayli-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.zoom {
+  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+}
+
+.centreuse-jean-loup {
+  display: flex;
+  justify-content: center;
+}
+.container-list {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 80vw;
+  text-align: center;
+}
+.container-list h4 {
+  padding-top: 15px;
+  border-top: 1px solid black;
+  width: 100%;
+}
+.dayli-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 1s ease-in-out;
+  transform-origin: top;
+  overflow: hidden;
+  height: 20%;
+  padding-bottom: 5px;;
+}
+.active {
+  height: 60%;
+  transform-origin: top;
+  transition: 1s ease-in-out;
+}
+.image {
+  background-image: url("images/plat.jpeg");
+  background-position: center;
+  background-size: contain;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative
+}
+.image p {
+  position: absolute;
+  transform: translate(0%, 100%);
+  bottom: -50%;
+  text-align: center;
+}

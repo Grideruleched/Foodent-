@@ -1,0 +1,17 @@
+
+<div class="card-index-wow">
+  <div class="super-image-de-gros-mangeur" style="background-image: url('<%= image_path(recipe.picture) %>')">
+  </div>
+    <div class="title-rating-bonheur">
+      <h5><%= recipe.name %></h5>
+
+      <% recipe.rating.to_i.times do  %>
+          <i class="fas fa-heart"></i>
+      <% end %>
+
+      <div class="sans-nom">
+        <%= link_to  "Détails", recipe_path(recipe), class: "mouloude" %>
+      </div>
+
+  </div>
+</div>

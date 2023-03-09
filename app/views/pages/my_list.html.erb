@@ -1,0 +1,54 @@
+<div class="centreuse-jean-loup">
+  <div class="container-list">
+    <h4>Lundi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[0])%><p><%= link_to @recipe_names[14], recipe_path(Recipe.find_by(name: @recipe_names[14])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[0]) %><p><%= link_to @recipe_names[0], recipe_path(Recipe.find_by(name: @recipe_names[0])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[1]) %><p><%= link_to @recipe_names[1], recipe_path(Recipe.find_by(name: @recipe_names[1])) %></p></div>
+      </div>
+    <h4>Mardi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[1]) %><p><%= link_to @recipe_names[15], recipe_path(Recipe.find_by(name: @recipe_names[15])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[2]) %><p><%= link_to @recipe_names[2], recipe_path(Recipe.find_by(name: @recipe_names[2])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[3]) %><p><%= link_to @recipe_names[3], recipe_path(Recipe.find_by(name: @recipe_names[3])) %></p></div>
+      </div>
+    <h4>Mercredi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[2]) %><p><%= link_to @recipe_names[16], recipe_path(Recipe.find_by(name: @recipe_names[16])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[4]) %><p><%= link_to @recipe_names[4], recipe_path(Recipe.find_by(name: @recipe_names[4])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[5]) %><p><%= link_to @recipe_names[5], recipe_path(Recipe.find_by(name: @recipe_names[5])) %></p></div>
+      </div>
+    <h4>Jeudi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[3]) %><p><%= link_to @recipe_names[17], recipe_path(Recipe.find_by(name: @recipe_names[17])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[6]) %><p><%= link_to @recipe_names[6], recipe_path(Recipe.find_by(name: @recipe_names[6])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[7]) %><p><%= link_to @recipe_names[7], recipe_path(Recipe.find_by(name: @recipe_names[7])) %></p></div>
+      </div>
+    <h4>Vendredi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[4]) %><p><%= link_to @recipe_names[18], recipe_path(Recipe.find_by(name: @recipe_names[18])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[8]) %><p><%= link_to @recipe_names[8], recipe_path(Recipe.find_by(name: @recipe_names[8])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[9]) %><p><%= link_to @recipe_names[9], recipe_path(Recipe.find_by(name: @recipe_names[9])) %></p></div>
+      </div>
+    <h4>Samedi</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[5]) %><p><%= link_to @recipe_names[19], recipe_path(Recipe.find_by(name: @recipe_names[19])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[10]) %><p><%= link_to @recipe_names[10], recipe_path(Recipe.find_by(name: @recipe_names[10])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[11]) %><p><%= link_to @recipe_names[11], recipe_path(Recipe.find_by(name: @recipe_names[11])) %></p></div>
+      </div>
+    <h4>Dimanche</h4>
+      <div class="dayli-list">
+        <div class="image"><%=image_tag(@chosen_breakfast[6]) %><p><%= link_to @recipe_names[20], recipe_path(Recipe.find_by(name: @recipe_names[20])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[12]) %><p><%= link_to @recipe_names[12], recipe_path(Recipe.find_by(name: @recipe_names[12])) %></p></div>
+        <div class="image"><%=image_tag(@chosen_pictures[13]) %><p><%= link_to @recipe_names[13], recipe_path(Recipe.find_by(name: @recipe_names[13])) %></p></div>
+      </div>
+      <div class="d-flex justify-content-between mt-3 align-items-center">
+        <p class="price my-0">PRIX: <%= @chosen_counter/100.to_f %><%= "€" %></p>
+        <% if @list_waiting.present? %>
+        <%= link_to "Voir ma liste de course", shopping_list_path(current_user.lists.last) %>
+        <% else %>
+         <%= link_to "Générer ma liste de course", create_list_ingredients_path(@chosen_list) %>
+        <% end %>
+</div>
+
+

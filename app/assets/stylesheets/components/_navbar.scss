@@ -1,0 +1,38 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background:#ff6f61;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand h1 {
+  width: 40px;
+  font-family: bangers;
+  color: antiquewhite;
+}
+.modal, .fade, .show{
+  background-color:#ff6f61;
+}
+.dropdown-menu{
+  margin-top:10px;
+}
+
+.dropdown-item:hover {
+  background-color: antiquewhite;
+  color: #ff6f61;
+}
+
+.navbar-light .navbar-nav .nav-search {
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.navbar-nav {
+  line-height: 10px;
+}

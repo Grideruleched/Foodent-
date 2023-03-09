@@ -1,0 +1,208 @@
+<div class="container">
+<h1 class="title-bangers">MES LISTES</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[1]) %>
+        <p class="ml-2 mb-0">LUN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[1]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[3]) %>
+        <p class="ml-2 mb-0">MAR</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[5]) %>
+        <p class="ml-2 mb-0">MER</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[3]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[7]) %>
+        <p class="ml-2 mb-0">JEU</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[8]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[9]) %>
+        <p class="ml-2 mb-0">VEN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[5]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[10]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[11]) %>
+        <p class="ml-2 mb-0">SAM</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[12]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures[13]) %>
+        <p class="ml-2 mb-0">DIM</p>
+      </div>
+      <div class="d-flex justify-content-between mt-3 align-items-center">
+        <p class="price my-0">PRIX: <%= @sorted_recipes[@i-1][1]/100.to_f %><%= "€" %></p>
+        <div class="btns-dashboard"><p class="mb-0"><%= link_to "Sélectionner",save_list_path(recipes: @sorted_recipes[@i-1][0]), method: :post  %></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[1]) %>
+        <p class="ml-2 mb-0">LUN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[1]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[3]) %>
+        <p class="ml-2 mb-0">MAR</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[5]) %>
+        <p class="ml-2 mb-0">MER</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[3]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[7]) %>
+        <p class="ml-2 mb-0">JEU</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[8]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[9]) %>
+        <p class="ml-2 mb-0">VEN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[5]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[10]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[11]) %>
+        <p class="ml-2 mb-0">SAM</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures1[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[12]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures1[13]) %>
+        <p class="ml-2 mb-0">DIM</p>
+      </div>
+      <div class="d-flex justify-content-between mt-3 align-items-center">
+        <p class="price my-0">PRIX: <%= @sorted_recipes[@i-2][1]/100.to_f %><%= "€" %></p>
+        <div class="btns-dashboard"><p class="mb-0"><%= link_to "Sélectionner",save_list_path(recipes: @sorted_recipes[@i-2][0]), method: :post  %></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[0]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[1]) %>
+        <p class="ml-2 mb-0">LUN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[1]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[3]) %>
+        <p class="ml-2 mb-0">MAR</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[2]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[5]) %>
+        <p class="ml-2 mb-0">MER</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[3]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[7]) %>
+        <p class="ml-2 mb-0">JEU</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[4]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[8]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[9]) %>
+        <p class="ml-2 mb-0">VEN</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[5]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[10]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[11]) %>
+        <p class="ml-2 mb-0">SAM</p>
+      </div>
+      <div class="day d-flex align-items-center" >
+        <%=image_tag(@breakfast_pictures2[6]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[12]) %>
+        <p class="mx-2 mb-0">+</p>
+        <%=image_tag(@pictures2[13]) %>
+        <p class="ml-2 mb-0">DIM</p>
+      </div>
+      <div class="d-flex justify-content-between mt-3 align-items-center">
+        <p class="price my-0">PRIX: <%= @sorted_recipes[@i-3][1]/100.to_f %><%= "€" %></p>
+        <div class="btns-dashboard"><p class="mb-0"><%= link_to "Sélectionner",save_list_path(recipes: @sorted_recipes[@i-3][0]), method: :post  %></p></div>
+      </div>
+    </div>
+  </div>
+</div>

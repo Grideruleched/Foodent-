@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// VARIABLES
+
+// FONT
+$font: 'Roboto', sans-serif;
+
+// COLORS
+$white: #fff;
+$black: #212129;
+$gray: #9B9B9B;
+$heart: #17BEBB;
+$star: #FFE500;
+$button: #EF3E36;
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: $font;
+   list-style-type: none;
+   text-decoration: none;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+}
+
+html, body {
+   height: 100%;
+}
+
+
+.card-show {
+   position: relative;
+   background: $white;
+   max-width: 400px;
+   margin: 0px auto;
+   border-radius: 50px;
+   .header {
+      background-size: cover;
+
+      }
+   .text {
+      .food {
+         color: $black;
+         text-align: center;
+         font-weight: normal;
+         text-transform: uppercase;
+         margin: 5px 30px;
+      }
+      .fa-clock-o {
+         color: $gray;
+         margin: 0 30px;
+      }
+      .fa-users {
+         color: $gray;
+      }
+   }
+   .stars {
+      margin: 10px 30px;
+      color: red;
+   }
+   .info {
+      margin: 10px 30px;
+      padding-bottom: 30px;
+   }
+   a.btn {
+      display: block;
+      background: $button;
+      color: $white;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      padding: 10px;
+      transition: 250ms;
+      width: 50%;
+      &:hover {
+         background: $heart;
+         transition: 250ms;
+         background-color:red;
+      }
+   }
+}
+.header img{
+   // height: 370px;
+   width:100%;
+}
+
+.card-index-wow {
+   display: flex;
+   flex-direction: column;
+   margin: 15px;
+   align-items: center;
+}
+
+.super-image-de-gros-mangeur {
+   width: 40vh;
+   height: 30vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   border-radius: 20px 20px 0px 0px;
+}
+
+.title-rating-bonheur {
+   width: 40vh;
+   padding-top: 20px;
+   background-color: white;
+   height: 30%;
+   border-radius: 0px 0px 20px 20px;
+}
+
+.sans-nom {
+   margin-top: 10px;
+}
+
+.center-parc {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.text {
+   padding-left: 15px;
+   padding-right: 15px;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-white">
+        <div class="card-body">
+          <ul class="nav nav-pills todo-nav">
+            <h1>Liste de courses</h1>
+          </ul>
+          <div class="todo-list">
+            <% @quantity_ingredients.each do |name, quantity_unit| %>
+              <% ingredient = Ingredient.find_by(name: name) %>
+              <% list_ingredient = ListIngredient.find_by(ingredient: ingredient, list: @list) %>
+              <div class="todo-item" data-id="<%= list_ingredient.id %>">
+   <%= simple_form_for(list_ingredient, method: :patch, url: list_ingredient_path(list_ingredient)) do |f| %>
+    <%= f.input :checked,
+    label: "#{ingredient.name} #{quantity_unit[0] == 0 ? '' : quantity_unit[0] } #{quantity_unit[1]}",
+    input_html: { class: 'ingredient-input checker', autocomplete: "checked" },
+    label_html: { class: 'ingredient-label'}  %>
+    <%= f.button :submit, 'boutton', class: "d-none ingredient-button" %>
+  <% end %>
+</div>
+<% end %>
+<%= link_to "Fini", my_list_path, class: "btn btn-success", id: "list-finish" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

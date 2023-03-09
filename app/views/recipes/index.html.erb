@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<div class="searchbarcool">
+  <%= form_tag search_recipes_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query], placeholder: 'Rechercher une recette',
+    class: "form-control form-control-lg form-control-borderless" %>
+  <%= submit_tag "Rechercher", class: "btn btn-lg btn-succes" %>
+  <% end %>
+</div>
+
+<div class="center-parc">
+  <% @recipes.each do |recipe| %>
+    <%= render "recipe_cards", recipe: recipe %>
+  <% end %>
+</div>
+

@@ -1,0 +1,5 @@
+meta_product_name: "Foodent"
+meta_title: "Foodent - Food app"
+meta_description: "Ne laissez pas votre budget vous controller, changez de vie et controller votre budget avec Foodent"
+meta_image: "foodent.jpg" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards

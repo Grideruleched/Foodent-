@@ -1,0 +1,30 @@
+
+
+<div class="card-show">
+   <div class="header">
+    <%= image_tag(@recipe.picture) %>
+      <div class="icon">
+      </div>
+   </div>
+   <div class="text">
+      <h1 class="food">
+         <%= @recipe.name %>
+      </h1>
+         <i class="fa fa-clock-o"> <%= @recipe.cooking_time %></i>
+      <div class="stars">
+         <% @recipe.rating.to_i.times do  %>
+            <i class="fas fa-heart"></i>
+         <% end %>
+      </div>
+      <p><strong>Description:</strong></p>
+        <p style="white-space: pre-line;"><%= @recipe.description %></p>
+        <br>
+      <p class="info"><strong>Ingredient:</strong>
+      <br>
+      <br>
+        <% @recipe.ingredients.each do |i| %>
+            <%= i.name %>,
+        <% end %></p>
+   </div>
+      <%= link_to  "Retour", recipes_path(@recipe), class: "btn" %>
+    </div>
